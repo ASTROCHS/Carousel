@@ -1,0 +1,72 @@
+body {
+  background-image: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 72px;
+}
+
+.image_slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 0px;
+  height: 0px;
+  margin: 30px;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  cursor: pointer;
+}
+
+.right {
+  border-left: 30px solid black;
+  margin-left: 30px;
+}
+
+.left {
+  border-right: 30px solid black;
+  margin-right: 30px;
+}
+
+.dots_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.dots{
+  list-style-type: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.dot{
+  width: 14px;
+  height: 14px;
+  margin: 0px 12px;
+  border-radius: 100%;
+  background-color: gray;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.active{
+  width: 14px;
+  height: 14px;
+  margin: 0px 12px;
+  border-radius: 100%;
+  background-color: black;
+}
