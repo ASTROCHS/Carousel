@@ -34,7 +34,10 @@ for(let i = 0; i<targetLength; i++){
 }
 
 function dot_click(x){
-  target.classList.remove('active');
+  var dots = document.getElementsByClassName("dot");
+  for( var i = 0; i < dots.length; i++ ){ 
+      dots[i].classList.remove('active'); 
+  }
   getImage.src = answer[x];
   target[x].classList.add('active');
 }
